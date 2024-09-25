@@ -33,7 +33,7 @@ public class TrnService {
 	double price= json.getDouble("price");
 	double amount = Double.parseDouble(reqMap.get("amount").toString());
 	
-	double result = getTrnType(Integer.parseInt(reqMap.get("id").toString()))
+	double result = getTrnType(Integer.parseInt(reqMap.get("userId").toString()))
 	.calculate(amount, price);
 	
 	System.out.println("JSON Result: "+result);

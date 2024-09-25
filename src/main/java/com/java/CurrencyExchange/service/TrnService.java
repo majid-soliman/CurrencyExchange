@@ -37,7 +37,7 @@ public class TrnService {
 	.calculate(amount, price);
 	
 	System.out.println("JSON Result: "+result);
-	return Map.of("price",result);
+	return Map.of("price",result,"transaction-details",reqMap);
 	
 	}
 	
